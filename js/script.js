@@ -24,6 +24,10 @@ $(document).ready(
       console.log(html);
     }
 
+    $(document).on( "click", '.listItem', function(){
+      $(this).remove();
+    }
 
+    );
   }
 );

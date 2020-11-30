@@ -2,12 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Handlebars  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- my script -->
     <script src="js/script.js" charset="utf-8"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>To do List</title>
   </head>
   <body>
@@ -16,7 +20,7 @@
     </ul>
 
     <script id="entry-template" type="text/x-handlebars-template">
-      <li class="listItem">{{toHtml}}</li>
+      <li class="listItem">{{toHtml}} <i class="far fa-check-circle"></i> </li>
     </script>
   </body>
 </html>

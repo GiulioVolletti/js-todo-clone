@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  padding: 10px;
+  font-size: 30px;
+  vertical-align: middle;
+  color: red;
+  cursor: pointer;
+}
+i:active{
+  color: green;
+}
+ul {
+  padding-left: 50px;
+}
