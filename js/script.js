@@ -24,8 +24,8 @@ $(document).ready(
       console.log(html);
     }
 
-    $(document).on( "click", '.listItem', function(){
-      $(this).remove();
+    $(document).on( "click", '.fa-check-circle', function(){
+      $(this).parent().remove();
     }
 
     );
