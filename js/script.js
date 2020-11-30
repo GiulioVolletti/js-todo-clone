@@ -14,17 +14,6 @@ $(document).ready(
       "fare la spesa",
       "comprare il giornale"
     ];
-    $("input").keyup(
-      function(){
-        // console.log(event.which);
-        if (event.which == 13) {
-          toDoList.push($("input").val());
-          console.log($("input").val());
-          console.log(toDoList);
-        }
-
-      }
-    );
 
     for (var i = 0; i < toDoList.length; i++) {
       var listItem ={
@@ -32,12 +21,30 @@ $(document).ready(
       };
       var html = template(listItem);
       $('#list').append(html)
-      console.log(html);
     }
 
     $(document).on( "click", '.fa-check-circle', function(){
       $(this).parent().remove();
     }
+    );
+
+    $("input").keyup(
+      function(){
+        // console.log(event.which);
+        if (event.which == 13) {
+          console.log($("input").val());
+          var newItem = $("input").val();
+          var newobject = {
+            toHtml : newItem,
+          }
+
+          var htmlNew = template(newobject);
+          $('#list').append(htmlNew)
+
+
+        }
+
+      }
     );
   }
 );
