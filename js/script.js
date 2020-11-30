@@ -14,6 +14,17 @@ $(document).ready(
       "fare la spesa",
       "comprare il giornale"
     ];
+    $("input").keyup(
+      function(){
+        // console.log(event.which);
+        if (event.which == 13) {
+          toDoList.push($("input").val());
+          console.log($("input").val());
+          console.log(toDoList);
+        }
+
+      }
+    );
 
     for (var i = 0; i < toDoList.length; i++) {
       var listItem ={
@@ -27,7 +38,6 @@ $(document).ready(
     $(document).on( "click", '.fa-check-circle', function(){
       $(this).parent().remove();
     }
-
     );
   }
 );
